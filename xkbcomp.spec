@@ -1,6 +1,6 @@
 Name:		xkbcomp
-Version:	1.0.5
-Release:	%mkrel 3
+Version:	1.1.0
+Release:	%mkrel 1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
