@@ -1,5 +1,5 @@
 Name:		xkbcomp
-Version:	1.1.1
+Version:	1.2.0
 Release:	%mkrel 1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
