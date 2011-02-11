@@ -1,5 +1,5 @@
 Name:		xkbcomp
-Version:	1.2.0
+Version:	1.2.1
 Release:	%mkrel 1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
@@ -21,7 +21,7 @@ servers or utilities.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
