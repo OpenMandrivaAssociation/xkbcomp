@@ -1,6 +1,6 @@
 Name:		xkbcomp
-Version:	1.3.1
-Release:	3
+Version:	1.4.0
+Release:	1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -21,7 +21,7 @@ Summary:	Devel file for xkbcomp
 Requires:	%{name} = %{EVRD}
 
 %description	devel
-This packages contains the devel file for xkbcomp
+This packages contains the devel file for xkbcomp.
 
 %prep
 %setup -q -n %{name}-%{version}
