@@ -1,5 +1,5 @@
 Name:		xkbcomp
-Version:	1.4.0
+Version:	1.4.1
 Release:	1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
@@ -16,11 +16,11 @@ several output formats. The most common use for xkbcomp is to create a compiled
 keymap file (.xkm extension) which can be read directly by XKB-capable X
 servers or utilities.
 
-%package	devel
+%package devel
 Summary:	Devel file for xkbcomp
 Requires:	%{name} = %{EVRD}
 
-%description	devel
+%description devel
 This packages contains the devel file for xkbcomp.
 
 %prep
