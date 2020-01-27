@@ -1,11 +1,14 @@
+%global optflags %{optflags} -O3
+
 Name:		xkbcomp
 Version:	1.4.2
-Release:	2
+Release:	3
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-
+# (tpg) Fedora patches
+Patch0:		https://src.fedoraproject.org/rpms/xorg-x11-xkb-utils/raw/master/f/0001-Suppress-high-keycode-warnings-at-the-default-warnin.patch
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xkbfile)
 BuildRequires:	x11-util-macros
@@ -24,14 +27,14 @@ Requires:	%{name} = %{EVRD}
 This packages contains the devel file for xkbcomp.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xkbcomp
