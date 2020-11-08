@@ -1,7 +1,7 @@
 %global optflags %{optflags} -O3
 
 Name:		xkbcomp
-Version:	1.4.3
+Version:	1.4.4
 Release:	1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
