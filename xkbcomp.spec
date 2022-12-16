@@ -1,16 +1,14 @@
-%global optflags %{optflags} -O3
-
 Name:		xkbcomp
-Version:	1.4.5
+Version:	1.4.6
 Release:	1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 BuildRequires:	bison
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xkbfile)
-BuildRequires:	x11-util-macros
+BuildRequires:	pkgconfig(xorg-macros)
 
 %description
 The xkbcomp keymap compiler converts a description of an XKB keymap into one of
@@ -37,7 +35,7 @@ This packages contains the devel file for xkbcomp.
 
 %files
 %{_bindir}/xkbcomp
-%{_mandir}/man1/xkbcomp.1*
+%doc %{_mandir}/man1/xkbcomp.1*
 
 %files devel
 %{_libdir}/pkgconfig/xkbcomp.pc
