@@ -1,9 +1,10 @@
 Name:		xkbcomp
-Version:	1.4.6
-Release:	2
+Version:	1.4.7
+Release:	1
 Summary:	Compile XKB keyboard description
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
+Url:      https://gitlab.freedesktop.org/xorg/app/xkbcomp/
+Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 BuildRequires:	bison
 BuildRequires:	pkgconfig(x11)
