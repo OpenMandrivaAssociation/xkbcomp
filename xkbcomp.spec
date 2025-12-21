@@ -6,6 +6,11 @@ Group:		Development/X11
 Url:      https://gitlab.freedesktop.org/xorg/app/xkbcomp/
 Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	bison
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xkbfile)
